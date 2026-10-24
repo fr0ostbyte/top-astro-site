@@ -1,5 +1,5 @@
 /* Carries ad source (yclid, utm_*) from the landing URL to astrolloai.ru links and reports clicks to Metrika. No third-party storage. */
-(function(){var K="top-astro-001-source",KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','yclid'],DAY=864e5,C=null;
+(function(){var K="top-astro-001-source",KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','yclid'],DAY=864e5,C='113768688';
 function clean(k,v){if(typeof v!=='string')return null;v=v.normalize('NFC').replace(/[\u0000-\u001f\u007f]/g,'').trim();if(!v)return null;
 if(k==='yclid')return /^\d{1,255}$/.test(v)?v:null;return v.slice(0,k==='utm_source'||k==='utm_medium'?100:255);}
 var now=Date.now(),saved=null;try{saved=JSON.parse(localStorage.getItem(K)||'null');}catch(e){}
