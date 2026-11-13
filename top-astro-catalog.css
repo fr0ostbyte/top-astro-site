@@ -118,17 +118,12 @@
   padding-block: clamp(2.35rem, 5vw, 4rem);
 }
 
-.catalog-access {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.catalog-access ol {
+.catalog-steps ol {
   padding-inline-start: 1.45rem;
   list-style: decimal;
 }
 
-.catalog-access li + li {
+.catalog-steps li + li {
   margin-top: 0.4rem;
 }
 
@@ -147,9 +142,5 @@
   .catalog-reading {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
     gap: clamp(20px, 4vw, 50px);
-  }
-
-  .catalog-access {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   }
 }
