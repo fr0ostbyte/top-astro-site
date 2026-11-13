@@ -1,35 +1,61 @@
-.catalog-screen h2 {
-  margin: 0.6rem 0 0;
-  font-size: clamp(1.25rem, 2vw, 1.85rem);
+.catalog-intro .cosmos-heading {
+  max-width: 1050px;
+}
+
+.catalog-intro h1 {
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.catalog-intro .cosmos-lead {
+  max-width: 760px;
+  margin-inline: auto;
+  text-wrap: pretty;
+}
+
+.catalog-perks {
+  justify-content: center;
+}
+
+.catalog-perks li > span {
+  display: none;
+}
+
+.catalog-example-grid {
+  display: grid;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: start;
+}
+
+.catalog-reading .catalog-case-text {
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid #b99559;
+  line-height: 1.7;
+}
+
+.catalog-case-detail {
+  color: #edc477;
+  font-size: 0.9rem;
+}
+
+.catalog-explorer:has(input[value="case-1"]:checked) .catalog-reading:not(#case-1),
+.catalog-explorer:has(input[value="case-2"]:checked) .catalog-reading:not(#case-2),
+.catalog-explorer:has(input[value="case-3"]:checked) .catalog-reading:not(#case-3) {
+  display: none;
+}
+
+.catalog-example-action {
+  margin-top: 1.5rem;
 }
 
 .catalog-screen img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: inherit;
 }
 
 .catalog-screen .small-note {
   margin: 0;
-}
-
-.catalog-proof {
-  display: grid;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.catalog-proof .product-facts {
-  grid-template-columns: minmax(0, 1fr);
-  margin-block: 0.5rem 0;
-}
-
-.catalog-proof .product-facts div {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
-  gap: 1rem;
-  align-items: baseline;
 }
 
 .catalog-landing .tier-card {
@@ -42,8 +68,19 @@
 }
 
 @media (min-width: 768px) {
-  .catalog-proof {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
-    gap: clamp(1.5rem, 5vw, 5rem);
+  .catalog-example-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog-intro .catalog-perks {
+    gap: 0.25rem 0.85rem;
+    margin-block: 1rem 0;
+  }
+
+  .catalog-intro .catalog-perks li {
+    min-height: auto;
+    padding-block: 0.25rem;
   }
 }
