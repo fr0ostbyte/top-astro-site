@@ -113,6 +113,13 @@ main[data-feature]:not(.catalog-landing) > section:first-of-type .cta-handoff {
   margin-inline: auto;
 }
 
+main[data-feature]:not(.catalog-landing) > section:first-of-type .landing-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.1rem;
+  margin: 1rem auto 0;
+}
+
 main[data-feature]:not(.catalog-landing) > section:first-of-type .inner-scene {
   display: none;
 }

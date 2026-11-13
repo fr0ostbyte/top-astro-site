@@ -13,14 +13,18 @@
   text-wrap: pretty;
 }
 
-.catalog-access-line,
 .catalog-demo-note {
   color: #adc1da;
 }
 
-.catalog-access-line {
-  margin: 0.9rem 0 0;
-  font-size: 0.9rem;
+.catalog-intro .landing-trust {
+  justify-content: center;
+  gap: 0.3rem 1.1rem;
+  margin: 1rem auto 0;
+}
+
+.catalog-intro .landing-trust li {
+  min-height: auto;
 }
 
 .catalog-explorer {
