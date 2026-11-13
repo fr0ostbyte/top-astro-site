@@ -1,0 +1,49 @@
+.catalog-screen h2 {
+  margin: 0.6rem 0 0;
+  font-size: clamp(1.25rem, 2vw, 1.85rem);
+}
+
+.catalog-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.catalog-screen .small-note {
+  margin: 0;
+}
+
+.catalog-proof {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.catalog-proof .product-facts {
+  grid-template-columns: minmax(0, 1fr);
+  margin-block: 0.5rem 0;
+}
+
+.catalog-proof .product-facts div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.catalog-landing .tier-card {
+  max-width: 42rem;
+}
+
+.catalog-final.final-panel {
+  grid-template-columns: minmax(0, 1fr);
+  background-image: radial-gradient(ellipse at 94% 40%, #354674 0%, transparent 56%);
+}
+
+@media (min-width: 768px) {
+  .catalog-proof {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: clamp(1.5rem, 5vw, 5rem);
+  }
+}
